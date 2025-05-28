@@ -18,7 +18,7 @@ This project is a dynamic movie discovery web app built with **HTML, CSS, and Ja
 ---  
 
 ## 🛠️ Technologies Used  
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)  
+- **Frontend**: HTML5, Twailwind Css, JavaScript (ES6+) written in one html. 
 - **API**: [The Movie Database (TMDB)](https://www.themoviedb.org/)  
 - **Deployment**: GitHub Pages  
 
@@ -35,8 +35,8 @@ This project is a dynamic movie discovery web app built with **HTML, CSS, and Ja
 
 ## 📸 Screenshots  
 *(Add your screenshots here with Markdown syntax, e.g.:)*  
-![Homepage](/screenshots/home.png)  
-![Search Results](/screenshots/search.png)  
+![Homepage](/Screenshot/home.png)  
+![Search Results](/Screenshot/search.png)  
 
 ---  
 
