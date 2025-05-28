@@ -1,6 +1,6 @@
 
 # 🎬 Raki-Movies  
-**A sleek movie explorer app** | [Live Demo](https://robikas19.github.io/Raki-movies/)  
+**A sleek movie explorer app** | 
 
 ![Demo Screenshot](/screenshot.png) *(Replace with your actual screenshot path)*  
 
