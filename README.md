@@ -34,7 +34,6 @@ This project is a dynamic movie discovery web app built with **HTML, CSS, and Ja
 ---  
 
 ## 📸 Screenshots  
-*(Add your screenshots here with Markdown syntax, e.g.:)*  
 ![Homepage](/Screenshot/home.png)  
 ![Search Results](/Screenshot/search.png)  
 
@@ -57,7 +56,7 @@ Open an [issue](https://github.com/robikas19/Raki-movies/issues) or reach out to
 
 ### 🔗 Connect with Me  
 [![GitHub](https://img.shields.io/badge/GitHub-robikas19-blue)](https://github.com/robikas19)  
-*(Add LinkedIn, Twitter, etc. if desired.)*  
+  
 
 ---  
 
