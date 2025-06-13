@@ -1,5 +1,5 @@
 
-# 🎬 Raki-Movies  
+# 🎬 Robi-Movies  
 **A sleek movie explorer app** | 
 
 ![Demo Screenshot](/screenshot.png) *(Replace with your actual screenshot path)*  
@@ -27,7 +27,7 @@ This project is a dynamic movie discovery web app built with **HTML, CSS, and Ja
 ## 🚀 How to Run Locally  
 1. Clone the repo:  
    ```bash  
-   git clone https://github.com/robikas19/Raki-movies.git  
+   git clone https://github.com/robikas19/robi-movies.git  
    ```  
 2. Open `index.html` in your browser.  
 
@@ -40,7 +40,7 @@ This project is a dynamic movie discovery web app built with **HTML, CSS, and Ja
 ---  
 
 ## 🌟 Why "Raki"?  
-Named after a playful movie-guide persona, **Raki** helps you explore films effortlessly!  
+Named after a playful movie-guide persona, **Robi** helps you explore films effortlessly!  
 
 ---  
 
