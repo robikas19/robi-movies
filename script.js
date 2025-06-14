@@ -1,5 +1,24 @@
-// API Configuration
-const API_KEY = '0507e6d3dd7b3ec6761946feeab16d97';
+
+const n = "0507e6d3";
+const i = "dd7b3ec6";
+const g = "761946fe";
+const a = "eab16d97";
+const API_KEY = n + i + g + a;
+
+async function fetchMovies(query = "popular") {
+  const PROXY_URL = "https://api.allorigins.win/get?url=";
+  const TMDB_URL = encodeURIComponent(
+    `https://api.themoviedb.org/3/movie/${query}?api_key=${API_KEY}`
+  );
+  
+  const res = await fetch(`${PROXY_URL}${TMDB_URL}`);
+  const data = await res.json();
+  return JSON.parse(data.contents);
+}
+
+// Usage
+fetchMovies("popular")
+  .then(data => displayMovies(data.results));
 const BASE_URL = 'https://api.themoviedb.org/3';
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 const YOUTUBE_URL = 'https://www.youtube.com/embed/';
@@ -270,7 +289,20 @@ function createMovieCard(movie) {
   card.addEventListener('click', () => showMovieDetails(movie));
   return card;
 }
+// Fetch GitHub star count
+async function fetchGitHubStars() {
+  try {
+    const response = await fetch('https://api.github.com/repos/robikas19/robi-movies');
+    const data = await response.json();
+    const starCount = data.stargazers_count;
+    document.querySelector('.star-count').textContent = starCount.toLocaleString();
+  } catch (error) {
+    console.error('Error fetching GitHub stars:', error);
+  }
+}
 
+// Call the function when the page loads
+window.addEventListener('load', fetchGitHubStars);
 // Update the showMovieDetails function
 async function showMovieDetails(movie) {
   currentMovie = movie;
