@@ -1,24 +1,3 @@
-
-const n = "0507e6d3";
-const i = "dd7b3ec6";
-const g = "761946fe";
-const a = "eab16d97";
-const API_KEY = n + i + g + a;
-
-async function fetchMovies(query = "popular") {
-  const PROXY_URL = "https://api.allorigins.win/get?url=";
-  const TMDB_URL = encodeURIComponent(
-    `https://api.themoviedb.org/3/movie/${query}?api_key=${API_KEY}`
-  );
-  
-  const res = await fetch(`${PROXY_URL}${TMDB_URL}`);
-  const data = await res.json();
-  return JSON.parse(data.contents);
-}
-
-// Usage
-fetchMovies("popular")
-  .then(data => displayMovies(data.results));
 const BASE_URL = 'https://api.themoviedb.org/3';
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 const YOUTUBE_URL = 'https://www.youtube.com/embed/';
@@ -99,7 +78,26 @@ async function fetchGenres() {
     console.error('Error fetching genres:', error);
   }
 }
+const n = "0507e6d3";
+const i = "dd7b3ec6";
+const g = "761946fe";
+const a = "eab16d97";
+const API_KEY = n + i + g + a;
 
+async function fetchMovies(query = "popular") {
+  const PROXY_URL = "https://api.allorigins.win/get?url=";
+  const TMDB_URL = encodeURIComponent(
+    `https://api.themoviedb.org/3/movie/${query}?api_key=${API_KEY}`
+  );
+  
+  const res = await fetch(`${PROXY_URL}${TMDB_URL}`);
+  const data = await res.json();
+  return JSON.parse(data.contents);
+}
+
+// Usage
+fetchMovies("popular")
+  .then(data => displayMovies(data.results));
 // Populate genre dropdown
 function populateGenreDropdown() {
   genreDropdown.innerHTML = '';
