@@ -16,6 +16,16 @@ Robi Movies is a sleek and responsive movie discovery platform designed to help 
 - **Responsive Design**: A seamless experience across desktop and mobile devices.
 - **Pagination**: Easily navigate through thousands of movie results.
 - **Modern UI**: A clean, dark-themed interface built with Tailwind CSS and shadcn/ui.
+## Screenshots
+
+### 🏠 Home
+![Home Screenshot](./screenshots/home.png)
+
+### 🔍 Search
+![Search Screenshot](./screenshots/search.png)
+
+### ⭐ Favorites
+![Favorites Screenshot](./screenshots/favorites.png)
 
 ## Tech Stack
 
